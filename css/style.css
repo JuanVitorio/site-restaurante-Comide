@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
 
 *{
   margin: 0;
@@ -12,11 +14,6 @@ body{
   font-family: var(--roboto-serifada);
 }
 
-main{
-
-}
-
-
 :root{
   --vermelho-marrom:#6B1F1F;
   --vermelho-claro:#EE8C8C;
@@ -25,9 +22,12 @@ main{
   --vermelho-queimado:#B83535;
 
   --roboto-serifada:'Roboto Serif', sans-serif;
-  --fonte-base:'Varela Round', sans-serif;
+  --fonte-base:'Roboto', sans-serif;
   --fonte-bonitinha:'Rancho', cursive;
+  --titulo:'League Gothic', sans-serif;
 }
+
+
 
 .header-inicio{
   height: 6rem;
@@ -36,6 +36,18 @@ main{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header-inicio a{
+  text-decoration: none;
+  padding: 0 20px;
+  font-size: 1.2rem;
+  color: white;
+  transition: color .2s;
+}
+
+.header-inicio a:hover{
+  color: #ffd5d5;
 }
 
 .cor{
@@ -79,7 +91,7 @@ main{
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2rem;
   animation: subindo 1s;
 }
 
@@ -100,16 +112,23 @@ main{
 }
 
 .esquerda h2{
-  font-size: 4.5rem;
+  font-size: 7rem;
+  font-family: var(--titulo);
   color: var(--vermelho-claro);
   text-shadow: 1px 1px 1px var(--vermelho-marrom);
+  text-transform: uppercase;
   text-decoration: underline;
+  font-weight: bold;
+  letter-spacing: .3rem;
 }
 
 .esquerda p{
-  line-height: 2.2rem;
-  font-size: 1.3rem;
-  letter-spacing: 1px;
+  line-height: 1.8em;
+  font-size: 1.7rem;
+  font-weight: 400;
+  font-family: var(--fonte-base);
+  color: #3d3d3d;
+  text-align: justify;
 }
 
 .esquerda button{
@@ -118,10 +137,10 @@ main{
   border: none;
   border-radius: 10px;
   background-color:#ff6c6c;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: white;
   text-shadow: 2px 2px 1px var(--vermelho-marrom);
-  font-family: var(--roboto-serifada);
+  font-family: var(--fonte-bonitinha);
   font-weight: bold;
   cursor: pointer;
   transition: background-color .2s;
@@ -155,11 +174,94 @@ main{
   flex-direction: column;
   gap: 8px;
   cursor: pointer;
+  position: fixed;
+  right: 0;
+  margin-right: 10px;
+  z-index: 100;
 }
 
-.line{
+.line1{
   width: 2.5rem;
   height: .2rem;
-  background-color: white;
+  background-color: rgb(248, 248, 248);
+  transition: background-color .6s;
 }
 
+.line2{
+  width: 2.5rem;
+  height: .2rem;
+  background-color: rgb(248, 248, 248);
+  transition: background-color .6s;
+}
+
+.line3{
+  width: 2.5rem;
+  height: .2rem;
+  background-color: rgb(248, 248, 248);
+  transition: background-color .6s;
+}
+
+.line1.bg-color{
+  background-color: rgb(168, 168, 168);
+}
+
+.line2.bg-color{
+  background-color: rgb(168, 168, 168);
+}
+
+.line3.bg-color{
+  background-color: rgb(168, 168, 168);
+}
+
+.menu{
+  width: 20rem;
+  height: 100vh;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  right:-20rem; 
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: -1px 0 20px rgba(0, 0, 0, 0.2);
+  transition: all .6s;
+}
+
+.menu.show-menu{
+  right:0;
+}
+
+.menu ul{ 
+    list-style: none;   
+  
+}
+
+.menu li{
+  padding: 20px 0;
+  font-size: 2em;
+  font-family: var(--fonte-base);
+
+}
+
+.menu a{
+  text-decoration: none;  
+  color: var(--vermelho-claro);
+  transition: color .2s;
+}
+
+.menu a:hover{
+  color: var(--vermelho-padrao);
+}
+
+.redes-sociais{
+  padding-top: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icone{
+  width: 40px;
+  cursor: pointer;
+}
