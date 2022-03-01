@@ -9,10 +9,11 @@
   <title>Comidê</title>
 </head>
 <body>
-  
+<!--a margem dos lados-->  
 <div class="container">
 
-<header class="header-inicio">
+<!--parte do cabeçalho principal-->  
+<header id="header-inicio">
   <h1 class="titulo-principal">Comi<span class="cor">dê</span>.</h1>
     
     <div>     
@@ -36,8 +37,10 @@
 </header>
 
 
+
 <main>
-  <section class="secao-inicio">
+  <!--seçao de apresentação-->
+  <section id="secao-inicio">
 <div class="lado-lado">
   <div class="esquerda">
       <h2>Faça seu pedido!</h2>
@@ -51,16 +54,37 @@
 </div>
   </section>
 
-  <section class="secao-segunda">
-    <h2>Menu</h2>
-    <button>Faça seu pedido!</button>
+  <section id="secao-segunda">
+    
+    <h2 class="titulo-conhecer">Venha nos conhecer!</h2>
+    
+    <div class="caixa-locais">
+
+    <div class="frame-lado">
+
+    <img src="img/mapa-locais.png" alt="mapa-rn" class="mapa" usemap="#meumapa">
+
+    <map name="meumapa">
+      <area shape="circle" coords="284, 120, 40" href="mapa-locais.html#acu" target="janela" alt="Loja de Açu">
+      <area shape="circle" coords="250, 240, 40" href="mapa-locais.html#caico" target="janela" alt="Loja de Caicó">
+      <area shape="circle" coords="540, 150, 40" href="mapa-locais.html#natal" target = "janela" alt="Loja de Natal">
+    </map>
+
+    <iframe src="mapa-locais.html" frameborder="0" name="janela"></iframe>
+
+    </div>
+
+    <div class="redes-sociais"></div>
+
+    </div>
+
   </section>
 
   <div class="menu">
     <nav>
       <ul class="lista-nav">
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Restaurante</a></li>
+        <li><a href="#header-inicio">Início</a></li>
+        <li><a href="#secao-segunda">Restaurante</a></li>
         <li><a href="#">Menu</a></li>
         <li><a href="#">Cupons</a></li>
         <li><a href="#">Contato</a></li>

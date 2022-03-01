@@ -29,7 +29,7 @@ body{
 
 
 
-.header-inicio{
+#header-inicio{
   height: 6rem;
   padding: 0 5rem;
   background-color: var(--vermelho-padrao);
@@ -38,7 +38,7 @@ body{
   align-items: center;
 }
 
-.header-inicio a{
+#header-inicio a{
   text-decoration: none;
   padding: 0 20px;
   font-size: 1.2rem;
@@ -46,7 +46,7 @@ body{
   transition: color .2s;
 }
 
-.header-inicio a:hover{
+#header-inicio a:hover{
   color: #ffd5d5;
 }
 
@@ -55,7 +55,7 @@ body{
   text-shadow: 1px 1px 1px var(--vermelho-marrom);
 }
 
-.header-inicio button{
+#header-inicio button{
   border: none;
   border: 2px solid white;
   border-radius: 10px;
@@ -67,7 +67,7 @@ body{
   background: none;
 }
 
-.header-inicio .titulo-principal{
+#header-inicio .titulo-principal{
   color: white;
   font-style: italic;
   font-size: 3rem;
@@ -82,7 +82,7 @@ body{
   padding-top: 5rem;
 }
 
-.secao-inicio{
+#secao-inicio{
   background-color: #fff7f1;
 }
 
@@ -185,6 +185,7 @@ body{
   height: .2rem;
   background-color: rgb(248, 248, 248);
   transition: background-color .6s;
+  box-shadow: 1px 1px 1px black;
 }
 
 .line2{
@@ -192,6 +193,8 @@ body{
   height: .2rem;
   background-color: rgb(248, 248, 248);
   transition: background-color .6s;
+  box-shadow: 1px 1px 1px black;
+
 }
 
 .line3{
@@ -199,18 +202,24 @@ body{
   height: .2rem;
   background-color: rgb(248, 248, 248);
   transition: background-color .6s;
+  box-shadow: 1px 1px 1px black;
 }
 
 .line1.bg-color{
   background-color: rgb(168, 168, 168);
+  box-shadow: none;
 }
 
 .line2.bg-color{
   background-color: rgb(168, 168, 168);
+  box-shadow: none;
+
 }
 
 .line3.bg-color{
   background-color: rgb(168, 168, 168);
+  box-shadow: none;
+
 }
 
 .menu{
@@ -264,4 +273,51 @@ body{
 .icone{
   width: 40px;
   cursor: pointer;
+}
+
+#secao-segunda{
+  background-color: var(--vermelho-padrao);
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.titulo-conhecer{
+  display: flex;
+  justify-content: center;
+  margin-right: 9.3em;
+  margin-bottom: .2em;
+
+  font-size: 6em;
+  font-family: var(--titulo);
+  text-shadow: 1px 1px 1px var(--vermelho-marrom);
+  letter-spacing: 3px;
+  line-height: 1em;
+
+  padding: 10px;
+
+  color: white;
+
+  animation: subindo .5s;
+
+}
+
+.frame-lado{
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  justify-content: center;
+}
+
+.mapa{
+  width: 600px;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid grey;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+iframe{
+  width: 50em;
+  height: 25em;
 }
