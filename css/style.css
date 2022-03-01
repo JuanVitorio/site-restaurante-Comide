@@ -67,6 +67,11 @@ body{
   background: none;
 }
 
+#header-inicio button:hover{
+  background-color: white;
+  color: var(--vermelho-padrao);
+}
+
 #header-inicio .titulo-principal{
   color: white;
   font-style: italic;
