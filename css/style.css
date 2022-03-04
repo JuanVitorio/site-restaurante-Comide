@@ -12,6 +12,7 @@
 
 body{
   font-family: var(--roboto-serifada);
+  user-select: none;
 }
 
 :root{
@@ -25,12 +26,15 @@ body{
   --fonte-base:'Roboto', sans-serif;
   --fonte-bonitinha:'Rancho', cursive;
   --titulo:'League Gothic', sans-serif;
+
+  font-size: 16px;
 }
 
 
 
 #header-inicio{
-  height: 6rem;
+  height: 100%;
+  max-height: 6rem;
   padding: 0 5rem;
   background-color: var(--vermelho-padrao);
   display: flex;
@@ -80,9 +84,14 @@ body{
 }
 
 .lado-lado{
+
+  margin: auto;
+  max-width: 120rem;
+
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
   padding-bottom: 5rem;
   padding-top: 5rem;
 }
@@ -91,8 +100,9 @@ body{
   background-color: #fff7f1;
 }
 
-.esquerda{
-  width: 50rem;
+.esquerda{ 
+  width: 100%;
+  max-width: 50rem;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -101,6 +111,7 @@ body{
 }
 
 .direita img{
+  max-width: 100%;
   opacity: 0;
   animation: subindo 1s forwards .5s;
 }
@@ -119,11 +130,14 @@ body{
 .esquerda h2{
   font-size: 7rem;
   font-family: var(--titulo);
+  font-weight: bold;
+
   color: var(--vermelho-claro);
+
   text-shadow: 1px 1px 1px var(--vermelho-marrom);
   text-transform: uppercase;
   text-decoration: underline;
-  font-weight: bold;
+
   letter-spacing: .3rem;
 }
 
@@ -137,7 +151,7 @@ body{
 }
 
 .esquerda button{
-  width: 15rem;
+  max-width: 15rem;
   height: 3.5rem;
   border: none;
   border-radius: 10px;
