@@ -14,8 +14,8 @@
 
 <!--parte do cabeçalho principal-->  
 <header id="header-inicio">
+
   <h1 class="titulo-principal">Comi<span class="cor">dê</span>.</h1>
-    
     <div>     
       <a href="#">Faça seu pedido</a>
       <a href="#">Cupons</a>
@@ -23,7 +23,7 @@
     </div>
 
   <div class="botoes">
-   
+      
     <button>Login</button>
     <button>Cadastrar</button>
     
@@ -33,36 +33,34 @@
       <div class="line3"></div>
     </div>
   </div>
-
 </header>
-
-
 
 <main>
   <!--seçao de apresentação-->
-  <section id="secao-inicio">
-<div class="lado-lado">
-  <div class="esquerda">
+<section id="secao-inicio">
+  <div class="lado-lado">
+    <div class="esquerda">
       <h2>Faça seu pedido!</h2>
       <p>Me surpreende pensar que, com uma história meio Romeu e Julieta a gente conseguiu e ainda consegue superar todas as dificuldades e desafios, porque o amor fala mais alto no fim das contas.</p>
       <button>Fazer pedido!</button>  
-  </div>
+    </div>
 
-  <div class="direita">
-    <img src="img/img-inicio.png" alt="">
-  </div>
-</div>
-  </section>
+    <div class="direita">
+      <img src="img/img-inicio.png" alt="">
+    </div>
 
-  <section id="secao-segunda">
-    
-    <h2 class="titulo-conhecer">Venha nos conhecer!</h2>
-    
+  </div>
+</section>
+
+<section id="secao-segunda">  
+    <h2 class="titulo-conhecer">Venha nos conhecer!</h2>  
+
     <div class="caixa-locais">
 
-    <div class="frame-lado">
-
+  <div class="frame-lado">
     <img src="img/mapa-locais.png" alt="mapa-rn" class="mapa" usemap="#meumapa">
+
+    <iframe src="mapa-locais.html" frameborder="0" name="janela"></iframe>
 
     <map name="meumapa">
       <area shape="circle" coords="284, 120, 40" href="mapa-locais.html#acu" target="janela" alt="Loja de Açu">
@@ -70,27 +68,106 @@
       <area shape="circle" coords="540, 150, 40" href="mapa-locais.html#natal" target = "janela" alt="Loja de Natal">
     </map>
 
-    <iframe src="mapa-locais.html" frameborder="0" name="janela"></iframe>
+  </div>
+</section>
 
+<section id="secao-terceira">
+
+  <div class="header-terceiro">
+   <h2 class="titulo-terceiro">Especialidades da casa</h2> 
+   <button>Peça já!</button>
+  </div>
+
+  <div class="container-img">
+
+    <div class="item">
+      <img src="img/pizza-imagem.png" alt="imagem de pizza"> 
+       <div>
+          <p class="item-nome">Pizza de Calabresa</p>
+          <p class = "texto">A especialidade da casa. Muito saborosa e com muita calabresa.</p>  
+       </div>
     </div>
 
-    <div class="redes-sociais"></div>
-
+    <div class="item">
+      <img src="img/pizza-imagem.png" alt="imagem de pizza">
+        <div>
+          <p class="item-nome">Pizza de Peperoni</p>
+          <p class = "texto">A especialidade da casa. Muito saborosa e com muito Peperoni.</p>
+        </div>  
     </div>
 
-  </section>
+    <div class="item">
+      <img src="img/pizza-imagem.png" alt="imagem de pizza">
+        <div>
+          <p class="item-nome">Pizza de Frango</p>
+          <p class = "texto">A especialidade da casa. Muito saborosa e com muito frango.</p>
+        </div>
+    </div>
 
-  <section id="secao-terceira">
+  </div>
+
+  <div class="container-img">
+
+    <div class="item">
+      <img src="img/pizza-imagem.png" alt="imagem de pizza">
+        <div>
+          <p class="item-nome">Pizza de Chocolate</p>
+          <p class = "texto">A especialidade da casa. Muito saborosa e com muito Chocolate.</p>
+        </div>
+    </div>
+
+    <div class="item">
+      <img src="img/pizza-imagem.png" alt="imagem de pizza">
+        <div>
+          <p class="item-nome">Pizza de Abacaxi</p>
+          <p class = "texto">A especialidade da casa. Muito saborosa e com muito Abacaxi.</p>
+        </div>
+    </div>
     
-  </section>
+    <div class="item">
+      <img src="img/pizza-imagem.png" alt="imagem de pizza">
+        <div>
+          <p class="item-nome">Pizza de Filé</p>
+          <p class = "texto">A especialidade da casa. Muito saborosa e com muito Filé.</p>
+        </div>
+    </div>
 
-  <div class="menu">
+  </div>
+</section>
+
+
+
+</main>
+
+<footer>
+
+  <p id="top" onclick="topo()">Voltar ao início</p>
+
+  <h2>Comidê</h2>
+  
+  <h3 id="margin-eu">&copy;Copyright Juan Vitório</h3>
+  <h3>com o apoio de Natália Alves 👶</h3>
+
+  <p class="texto texto-cima">Site fictício com o intuito de treino e aprendizado.</p>
+  <p class="texto margin-texto">Criado por mim através da ideia da minha namorada.</p>
+
+  <div class="redes-sociais-footer">
+    <a href="https://github.com/Whoan10"><i class="fa-brands fa-github"></i></a>
+    <a href="https://instagram.com/juanvitorio_"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+  </div>
+
+</footer>
+
+</div>
+
+<div class="menu">
     <nav>
       <ul class="lista-nav">
-        <li><a href="#header-inicio">Início</a></li>
-        <li><a href="#secao-segunda">Restaurante</a></li>
-        <li><a href="#">Refeições</a></li>
-        <li><a href="#">Contato</a></li>
+        <li onclick="topo()">Início</li>
+        <li onclick="mid()">Restaurantes</li>
+        <li onclick="low()">Refeições</li>
+        <li onclick="foot()">Contato</li>
       </ul>
 
       <div class="redes-sociais">
@@ -100,19 +177,10 @@
       </div>  
 
     </nav>
-  </div>
-
-</main>
-
-<footer>
-
-</footer>
-
 </div>
 
-
 </body>
-
+<script src="https://kit.fontawesome.com/5dd3a37e54.js" crossorigin="anonymous"></script>
 <script src="js/script.js"></script>
 
 </html>
